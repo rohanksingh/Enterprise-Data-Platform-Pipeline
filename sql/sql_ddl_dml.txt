@@ -1,0 +1,7 @@
+For controlled testing, you may want to clear the bronze table before rerunning:
+
+TRUNCATE TABLE bronze.trades_raw;
+TRUNCATE TABLE silver.trades_clean;
+TRUNCATE TABLE dq.trades_rejects;
+
+psql -h localhost -p 5433 -U admin -d enterprise_data

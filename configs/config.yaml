@@ -1,0 +1,14 @@
+database:
+  host: localhost
+  port: 5432
+  name: enterprise_data
+  user: admin
+  password: admin123
+
+paths:
+  raw_data: data/raw/
+  sample_data: data/sample/
+
+pipeline:
+  batch_size: 1000
+  retry_attempts: 3

@@ -1,0 +1,11 @@
+psql -h localhost -p 5433 -U admin -d enterprise_data
+
+SELECT COUNT(*) FROM bronze.trades_raw;
+SELECT COUNT(*) FROM silver.trades_clean;
+SELECT COUNT(*) FROM dq.trades_rejects;
+SELECT COUNT(*) FROM gold.fact_trade;
+
+
+docker exec -it airflow_webserver bash
+cd /opt/airflow/project
+python -m src.ingestion.ingest_trades_csv

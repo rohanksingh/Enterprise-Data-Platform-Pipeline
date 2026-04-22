@@ -1,0 +1,12 @@
+sources:
+  trades:
+    type: csv
+    path: data/sample/sample_trades.csv
+
+  market:
+    type: api
+    provider: yfinance
+
+  macro:
+    type: api
+    provider: fred
