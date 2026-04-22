@@ -11,6 +11,11 @@ CSV Trade Data
 - Gold Schema (fact and dimension tables)  
 - Airflow DAG orchestration
 
+#### Architecture Diagram
+
+  <img width="2124" height="1797" alt="image" src="https://github.com/user-attachments/assets/c0ae4146-e924-4502-a9e2-836086f7c17b" />
+
+
 #### Tech Stack
 
 - Python
